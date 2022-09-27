@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            background-color: mediumpurple;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #dp {
+            color: white;
+            text-shadow: 2px 2px 4px black;
+        }
+        #btn {
+            border-radius: 50%;
+        }
+        #btns {
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="dp">0</h1>
+        <div id="btns">
+            <button id="btn" onclick="count()">+</button>
+            <button id="btn" onclick="ncount()">-</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        let x = 0;
+        function count() {
+            x++;
+            document.getElementById('dp').innerHTML = x;
+        }
+        function ncount() {
+            x--;
+            document.getElementById('dp').innerHTML = x;
+        }
+    </script>
+</body>
+</html>
